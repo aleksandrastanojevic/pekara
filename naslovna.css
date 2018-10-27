@@ -1,0 +1,70 @@
+
+.pozadina {
+    background-image: url("img/pozadina.jpg");
+    background-position: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9; 
+    height: 500px;
+}
+.wrapper {
+    margin: 0 2%;
+}
+nav {
+    margin-bottom: 20px;
+    background:black;
+    opacity: 0.9;
+}
+
+.content {
+    background-color: grey;
+    padding: 2%;
+    max-height: 280px;
+}
+
+h1, h2 {
+    color: black;
+    text-align: center;
+    margin: 0;
+}
+h2 {
+    padding: 15px 0;
+}
+.naslovi {
+    background-color: white;
+    opacity: 0.9;
+}
+.proizvodi {
+    
+}
+.slika {
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+}
+footer {
+    color: black;
+    text-align: center; 
+}
+
+
+
+@media (min-width: 768px){
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+    }
+    nav a:hover {
+        color: yellow;
+        border-bottom: 2px solid yellow;
+    }
+    .content {
+        position: relative;
+        top: 100px;
+    }
+    .flex {
+        display: flex;
+    }
+}
