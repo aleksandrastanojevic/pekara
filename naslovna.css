@@ -1,10 +1,10 @@
 
 .pozadina {
-    background-image: url("img/pozadina.jpg");
+    background-image: url("img/pozadina.jpeg");
     background-position: cover;
     background-repeat: no-repeat;
     opacity: 0.9; 
-    height: 500px;
+    height: 100vh;
 }
 .wrapper {
     margin: 0 2%;
@@ -18,7 +18,8 @@ nav {
 .content {
     background-color: grey;
     padding: 2%;
-    max-height: 280px;
+    max-height: 90vh;
+    opacity: 0.8;
 }
 
 h1, h2 {
@@ -33,22 +34,44 @@ h2 {
     background-color: white;
     opacity: 0.9;
 }
-.proizvodi {
-    
-}
+
 .slika {
     text-align: center;
     display: block;
     margin: 20px auto;
 }
 footer {
+    background: yellow;
     color: black;
-    text-align: center; 
+    text-align: center;
+    padding: 10px; 
+}
+
+.red-dugme {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.text-dugme {
+    padding: 30px;
+    font-size: 1.5em;
+}
+.dugme {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: yellow;
+    font-weight: 900;
+   font-size: 1.2em;
 }
 
 
 
 @media (min-width: 768px){
+    body {
+        font-size: 1.2em
+    }
     nav {
         display: flex;
         justify-content: space-evenly;
@@ -66,5 +89,25 @@ footer {
     }
     .flex {
         display: flex;
+    }
+    .proizvodi {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+    }
+    .dugme {
+        width: 200px;
+        height: 200px;
+        font-size: 2em;
+    }
+}
+@media (min-width: 1320px){
+    body {
+        font-size: 1.4em
+    }
+    .proizvodi {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .text-dugme {
+        font-size: 2em;
     }
 }
